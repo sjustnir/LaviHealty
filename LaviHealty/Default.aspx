@@ -4,12 +4,24 @@
     <asp:UpdatePanel ID="SitePanel" UpdateMode="Conditional" runat="server">
         <ContentTemplate>
             <div class="jumbotron">
-                <h1 class="text-center">Lavi is Healthy? Good!</h1>
-                <p class="lead text-center"><%: DateTime.Now.ToString("dd/MM/yyyy") %></p>
-                <p class="lead text-center">Send online approval to the kindergarten!</p>
-                <p class="text-center"><asp:LinkButton ID="SendConfirmationButton" runat="server" CssClass="btn btn-primary" Text="Send Confirmation" 
+                <h1 class="text-center">
+                    Lavi is Healthy? Good!
+                </h1>
+                <p class="lead text-center">
+                    <%: DateTime.Now.ToString("dd/MM/yyyy") %>
+                </p>
+                <p class="lead text-center">
+                    Send online approval to the kindergarten!
+                </p>
+                <p class="text-center">
+                    As: 
+                    <asp:DropDownList ID="SendAsDropDown" runat="server" CssClass="GeneralDropDown"/>
+                </p>
+                <p class="text-center">
+                    <asp:LinkButton ID="SendConfirmationButton" runat="server" CssClass="btn btn-primary" Text="Send Confirmation" 
                                    OnClick="SendConfirmationButton_OnClick"
-                                   OnClientClick="return confirm('are you sure you want to send confirmation?');"/></p>
+                                   OnClientClick="return confirm('are you sure you want to send confirmation?');"/>
+                </p>
             </div>
             <div class="jumbotron" style="margin-left: auto; margin-right: auto; text-align: center;">
                  <asp:Label ID="ResultLabel" CssClass="lead text-center" Visible="False" runat="server"/>

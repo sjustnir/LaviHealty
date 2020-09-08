@@ -22,6 +22,15 @@ namespace LaviHealty {
         protected global::System.Web.UI.UpdatePanel SitePanel;
         
         /// <summary>
+        /// SendAsDropDown control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList SendAsDropDown;
+        
+        /// <summary>
         /// SendConfirmationButton control.
         /// </summary>
         /// <remarks>
